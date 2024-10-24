@@ -13,6 +13,9 @@
         from the animal table but also having access to the column, dateOfBirth,
         from the pet table. The reason for joining multiple tables is to allow the
         programmer to access multiple columns from different tables at one time.
+            So in this question you needed to look into the type of animal, whcih
+            would be found in the animal table and the dateOfBirth found in the pet
+            table. 
 */
 -- Question 2
 /* Yes, you would just have to query the records that contains a conditional
@@ -47,6 +50,22 @@
         JOIN extremity ON extremity.animalId = pet.animalId
         JOIN animal ON animal.id = extremity.id
         ORDER BY name
+    Code:
+        //
+    Performance Anwser:
+        The pupose of joning the extremity with the pet table is becasue they
+        share the same column name animalID, so I'm able to access the id column
+        from the animal table but also having access to the column, dateOfBirth,
+        from the pet table. The reason for joining multiple tables is to allow the
+        programmer to access multiple columns from different tables at one time.
+            In this question you needed to display the pet names that are found in
+            the pet table and the animal type that was found in animal table. So,
+            you must find a way to access the givenName column in the pet table
+            and the name group in animal table in order to acomplish this task.
+            Unfortunately, the pet and animal table do not share any common columns.
+            However, extremity shared the column animalId with pet and extremity
+            shares the id column with animal. So, if you join the extremity table
+            on the animalID and the animalid this would be possible.
 */
 -- Question 5
 /* The animal name Paul, the piegon.
