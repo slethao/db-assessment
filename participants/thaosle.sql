@@ -52,9 +52,8 @@
         FROM pet
         JOIN extremity ON extremity.animalId = pet.animalId
         JOIN animal ON animal.id = extremity.id
-        ORDER BY name
-    Code (using ORDER BY):
-        //
+        ORDER BY name, givenName
+    
     Performance Anwser:
         The pupose of joning the extremity with the pet table is becasue they
         share the same column name animalID, so I'm able to access the id column
