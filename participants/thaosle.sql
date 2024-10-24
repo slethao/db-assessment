@@ -7,6 +7,12 @@
         JOIN animal ON animal.id = extremity.id
         ORDER BY dateOfBirth DESC
         LIMIT 1
+    Performance Anwser:
+        The pupose of joning the extremity with the pet table is becasue they
+        share the same column name animalID, so I'm able to access the id column
+        from the animal table but also having access to the column, dateOfBirth,
+        from the pet table. The reason for joining multiple tables is to allow the
+        programmer to access multiple columns from different tables at one time.
 */
 -- Question 2
 /* Yes, you would just have to query the records that contains a conditional
