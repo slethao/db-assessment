@@ -15,7 +15,10 @@
         programmer to access multiple columns from different tables at one time.
             So in this question you needed to look into the type of animal, whcih
             would be found in the animal table and the dateOfBirth found in the pet
-            table. 
+            table. However, the animal and pet table do not share any common groups
+            but pets share animalId with pet, animal shares an id column with extremity.
+            So, combining these tables based on these similar columns allows the programmer
+            to access the animal type and dateOfBirth at the same time.
 */
 -- Question 2
 /* Yes, you would just have to query the records that contains a conditional
@@ -50,7 +53,7 @@
         JOIN extremity ON extremity.animalId = pet.animalId
         JOIN animal ON animal.id = extremity.id
         ORDER BY name
-    Code:
+    Code (using ORDER BY):
         //
     Performance Anwser:
         The pupose of joning the extremity with the pet table is becasue they
