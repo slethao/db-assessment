@@ -79,6 +79,10 @@
         SELECT *
         FROM pet
         WHERE MONTH(dateOfBirth) <= 8 AND MONTH(dateOfBirth) >= 6
+    Anwser to a meteorological or astronomical summer:
+        I think its going to be an  astronomical summer because the
+        data in the table that we are looking at, dateOfBirth, is based
+        on what month the pet was born.
 */
 -- Question 8 (first version)
 /*
@@ -95,6 +99,8 @@
                 ELSE "No Tails"
             END AS TailStatus, extremity.legs, extremity.id, extremity.animalId
             FROM extremity;
+        Code (with a Boolean value 1 = tail and 0 = no tails):
+            //
 
 */
 -- Question 8 (second version)
