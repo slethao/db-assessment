@@ -127,7 +127,7 @@
             END AS TailStatus, extremity.legs, extremity.id, extremity.animalId
             FROM extremity;
         Code (with a Boolean value 1 = tail and 0 = no tails):
-            //
+            
 
 */
 -- Question 8 (second version)
@@ -140,4 +140,36 @@
    the pet is taking, what sort of diet the pet is on and how much of a portion size they need to take,
    also do you need a selection for the veterian to place personal notes for the pet to follow to maintain
    or imporve the condition of the pet. These facotrs could be separte tables in the database. 
+
+    Revised:
+        A table that could be include:
+            --> vaccine
+            --> medication 
+            --> quanity of medication in stock (optional, but if they do)
+            --> price of the each medication and vaccine *in office*
+            --> supplements
+            --> allegeries
+            --> appointments sceduled (including if the pet showed up to the appoitment or not)
+            --> local pharmacy of patient goes to
+        Possible Viewable objects:
+            --> medications and vaccines taken by each pet
+            --> meciations and vaccines NOT taken by each pet
+            --> allegeries and medications
+            --> allegeries and vaccine
+        Reasons for Tables:
+            (vaccine) --> easier for the vets in the office to access records of medications and vaccines,
+            in order to remind the patient of what they might need to take or is MISSING
+            (medication) --> listing of the medication *if any* that the pet is prescribed on including dosage
+            (medication in stock) --> able to organize inventory of what they have on stock for patients if 
+            they want to get medications from the office//
+            (price of medication in office) --> tells you the pricing of all the medications you can get in the office
+            (supplements) --> what supplements the patient is currently on
+            (allegeries) --> what allegeries the pet may have
+            (appointments) --> all the dates for the physicals that the pet has been scheduled including rescheduling
+            (local pharmacy) --> the pet pharmacy that the pet usually gets its medications
+        Reasons for Viewable objects:
+            --> able to specify missing data, in order to make recomendations
+            --> medications and vaccines that the pet take so its easier to tell the pet may need or is missing
+            --> allegeries and vaccines (or medications) to keep record that pet might not be able to take
+
 */
