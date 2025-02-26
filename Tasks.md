@@ -14,6 +14,6 @@ What's the ratio between male & female pets?
 We want to have a party for all pets born in summer. Which pets would we celebrate at this event?
 # Question 8
 It seems like the column `tail` in `extremity` is rather useless. How would you change it to represent that an animal either has a tail or not?
-# Question 8
+# Question 9
 We want to keep track of the medications & vaccines a pet has had or has scheduled. What table structure would you propose and why?
 (This question is targeted at critical architectural thinking skills rather than SQL. Think ahead. What commonalities could appear? What kind of data-related questions could arise from such information?)
